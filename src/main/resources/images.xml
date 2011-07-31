@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<images>
+    <image>
+        <source>images/ousoul-sittah.jpg</source>
+        <title size="24" color="0xda4097">الأصول الستة</title>
+        <messages>
+            <message size="18" color="0x000000">كتاب نفيس</message>
+            <message size="18" color="0x000000">طبعة دار السلام</message>
+            <message size="18" color="0x000000">ملخص في العقيدة</message>
+        </messages>
+    </image>
+    <image>
+        <source>images/1091987_60117281.jpg</source>
+        <title size="24" color="0xda4097">مسجد عقبة بن نافع بالقيروان</title>
+        <messages>
+            <message size="18" color="0x000000">كتاب نفيس</message>
+        </messages>
+    </image>
+    <image>
+        <source>images/1071508_60391943.jpg</source>
+        <title size="24" color="0xda4097">مصحف فيه كلام الرحمان</title>
+        <messages>
+            <message size="18" color="0x000000">كتاب نفيس</message>
+        </messages>
+    </image>
+    <image>
+        <source>images/1240294_13894038.jpg</source>
+        <title size="24" color="0xda4097">صومعة من داخل المسجد</title>
+        <messages>
+            <message size="18" color="0x000000">كتاب نفيس</message>
+        </messages>
+    </image>
+    <image>
+        <source>images/1282763_jerusalem_the_wall.jpg</source>
+        <title size="24" color="0xda4097">القدس فتحها عمر</title>
+        <messages>
+            <message size="18" color="0x000000">كتاب نفيس</message>
+        </messages>
+    </image>
+    <image>
+        <source>images/154322_8982.jpg</source>
+        <title size="24" color="0xda4097">مسجد جميل بتركيا</title>
+        <messages>
+            <message size="18" color="0x000000">كتاب نفيس</message>
+        </messages>
+    </image>
+    <image>
+        <source>images/374313_4677.jpg</source>
+        <title size="24" color="0xda4097">مصاحف</title>
+        <messages>
+            <message size="18" color="0x000000">كتاب نفيس</message>
+        </messages>
+    </image>
+    <image>
+        <source>images/965297_15934500.jpg</source>
+        <title size="24" color="0xda4097">صورة مسجد</title>
+        <messages>
+            <message size="18" color="0x000000">كتاب نفيس</message>
+        </messages>
+    </image>
+</images>

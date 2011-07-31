@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+               xmlns:s="library://ns.adobe.com/flex/spark" 
+               xmlns:mx="library://ns.adobe.com/flex/mx" 
+               xmlns:manager="com.alkiteb.nozha.manager.*"
+               xmlns:spinner="com.alkiteb.nozha.controls.spinner.*"
+               creationComplete="imageLoader.loadXMLFile()"
+               width="710" height="390"
+               styleName="applicationStyle">
+    <!-- borderThickness="1" borderStyle="solid" borderColor="black" backgroundGradientAlphas="[1.0, 0.37]" backgroundGradientColors="[#FFFFFF, #DADADA]" backgroundAlpha="1.0"  -->
+    
+    <mx:Canvas top="0" bottom="0" left="0" right="0" id="imageHolder"/>
+    
+    <mx:Canvas top="0" bottom="0" right="120" left="280" backgroundColor="#FFFFFF" backgroundAlpha="0.8" id="textHolder" showEffect="{textHolderShowEffect}"
+               hideEffect="{textHolderHideEffect}" visible="false">
+        <mx:Label id="titleText" top="100" right="10" left="10" textAlign="center" showEffect="{titleShowEffect}"/>
+        <mx:Canvas id="messagesHolder" top="150" right="10" left="10"/>
+    </mx:Canvas>
+    
+    <fx:Declarations>
+        <mx:Fade id="textHolderHideEffect" alphaFrom="1" alphaTo="0" duration="50"/>
+        <mx:Fade id="textHolderShowEffect" alphaFrom="0" alphaTo="1" duration="300"/>
+        
+        <mx:Parallel id="titleShowEffect" duration="300">
+            <mx:Blur blurXFrom="8" blurYFrom="8" blurXTo="0" blurYTo="0"/>
+            <mx:Move xFrom="-25"/>
+        </mx:Parallel>
+        
+        <mx:Parallel id="textShowEffect" duration="500">
+            <mx:Blur blurXFrom="8" blurYFrom="8" blurXTo="0" blurYTo="0"/>
+            <mx:Move xFrom="-25"/>
+        </mx:Parallel>
+        
+        <manager:ImageManager id="imageLoader"/>
+    </fx:Declarations>
+    
+    
+    <!--fx:Style source="style.css"/-->
+    
+
+    <mx:Button click="imageLoader.goNext()" label="تالي" top="150" left="5"/>
+    <mx:Button click="imageLoader.goPrevious()" label="سابق" top="150" right="70"/>
+    
+    <spinner:Spinner id="spinner"/>
+
+</s:Application>
